@@ -47,7 +47,12 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 margin-bottom: 20px;
 }
 
+.footer-icons {
+	padding-left: 10px;
+	padding-left: 10px;
+}
 /* Base */
+
 html, body { height: 100%; }
 
 body {

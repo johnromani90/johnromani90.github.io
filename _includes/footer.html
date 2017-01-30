@@ -1,3 +1,20 @@
 <footer id="footer">
+        {% if site.twitter_username %}
+            <a href="https://twitter.com/{{ site.twitter_username }}">
+                <i class="fa fa-twitter footer-icons"></i> Twitter
+            </a>
+        {% endif %}
+        {% if site.github_username %}
+            <a href="https://github.com/{{ site.github_username }}">
+                <i class="fa fa-github footer-icons"></i> GitHub
+            </a>
+        {% endif %}
+        {% if site.linkedin_username %}
+            <a href="https://linkedin.com/in/{{ site.linkedin_username }}">
+                <i class="fa fa-linkedin footer-icons"></i> LinkedIn
+            </a>
+        {% endif %}
+    <br/>
+    <br/>
     <p class="small">© Copyright {{ site.time | date: '%Y' }} {{ site.author }}</p>
 </footer>

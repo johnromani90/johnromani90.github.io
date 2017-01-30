@@ -14,6 +14,9 @@ domain_name: 'https://johnromani90.github.io/'
 google_analytics: 'UA-XXXXXXXX-X'
 disqus: false
 disqus_shortname: 'your-disqus-shortname'
+twitter_username:     'johnromani90'
+github_username:      'johnromani90'
+linkedin_username:    'johnromani90'
 
 # Details for the RSS feed generator
 url:            'http://your-blog-url.example.com'
