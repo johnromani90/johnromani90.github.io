@@ -1,3 +1,9 @@
+---
+title:  "Auditing models with Ruby on Rails"
+date:   2017-02-04 10:18:00
+description: adding additional audit lookups from associated foreign key
+---
+
 This week I worked on auditing using the [audited gem](https://github.com/collectiveidea/audited){:target="_blank"}. The idea of auditing models is  not new or necessarily complex, however, the implmentation can effect production cost as we are essentially creating new row in our "audits" table every time our logic says "save this."
 
 The gem implements [polymorphism](https://johnromani90.github.io/2017/setting-up-polymorphism-in-ruby-on-rails/){:target="_blank"} and allows you to specify which models to audit. The audits table has an "auditable_id" and an "auditable_type" along with "user_id" which makes for a handy "current_user" helper method that you can use to pull the user on any audit instance.
