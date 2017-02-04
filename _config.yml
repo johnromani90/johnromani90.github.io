@@ -12,8 +12,8 @@ paginate: 5
 baseurl: /
 domain_name: 'https://johnromani90.github.io/'
 google_analytics: 'UA-XXXXXXXX-X'
-disqus: false
-disqus_shortname: 'your-disqus-shortname'
+disqus: true
+disqus_shortname: 'johnromani90'
 twitter_username:     'johnromani90'
 github_username:      'johnromani90'
 linkedin_username:    'johnromani90'

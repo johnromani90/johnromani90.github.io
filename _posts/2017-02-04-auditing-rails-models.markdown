@@ -154,3 +154,5 @@ Now we can feel confident that every time we pass in our foreign key, we will ei
 End result (all data is fake):
 
 ![alt text](/assets/images/end_screen_shot.png "before")
+
+I would love to hear if you have any feedback or have been through a similar experience with auditing.
