@@ -147,7 +147,7 @@ describe AuditsHelper do
 end
 ```
 
-The reason I checked if the key was "owner_id" is because the our user table has a relationship with a serperate model that is not thought of as a user, but rather as an "owner". This is not ideal, and I can see this becoming a problem in the future if more relationships like this are created, but for now I am satisfied with the results.
+The reason I checked if the key was "owner_id" is because the our user table has a relationship with a separate model that is not thought of as a user, but rather as an "owner". This is not ideal, and I can see this becoming a problem in the future if more relationships like this are created, but for now I am satisfied with the results.
 
 Now we can feel confident that every time we pass in our foreign key, we will either get back a "display_name" or the original value (which is the desired case in certain situations)
 
