@@ -105,15 +105,20 @@ Basically the above is creating an instance of a model that is audited (order in
 Now the gem gives you back your audits in an array, along with the foreign key (the "auditable_type") and the id ("auditable_id"). In order to get the display names we need to make a custom method.
 
 ```ruby
-  def classify_foreign_key(foreign_key)
-    foreign_key = "user_id" if foreign_key == "owner_id"
-    if foreign_key =~ /_id$/
-      attr = foreign_key.sub(/_id$/, '')
+  def classify_foreign_key(audit_column, audit_type)
+    reflections = audit_type.reflect_on_all_associations(:belongs_to).select{|r| r.foreign_key == audit_column} if audit_type.respond_to?(:reflect_on_all_associations)
+    if reflections && reflections.any?
+      return reflections.first.class_name.safe_constantize
+    end
+
+    if audit_column =~ /_id$/
+      attr = audit_column.sub(/_id$/, '')
       attr = attr.classify.safe_constantize
     else
       attr = nil
     end
-    return attr.nil? ? foreign_key : attr
+
+    return attr.nil? ? audit_column : attr
   end
 ```
 
@@ -148,12 +153,17 @@ describe AuditsHelper do
       expect(helper.classify_foreign_key(o)).to eq Order
       expect(helper.classify_foreign_key(product)).to eq Product
     end
+    
+    it "works for special relationships" do
+      o = "owner_id"
+      expect(helper.classify_foreign_key(o, Prescriber)).to eq User
+    end
   end
 
 end
 ```
 
-The reason I checked if the key was "owner_id" is because the our user table has a relationship with a separate model that is not thought of as a user, but rather as an "owner". This is not ideal, and I can see this becoming a problem in the future if more relationships like this are created, but for now I am satisfied with the results.
+We are taking advantage of rails reflections here, which checks the belongs to associated models for our audit. If that model's foreign key matches our audit column, we go ahead by using that value. However, in some cases, that will not be the case (such as pre configured classes that to not inherit from active record). In those cases we use regex to find the related class.
 
 Now we can feel confident that every time we pass in our foreign key, we will either get back a "display_name" or the original value (which is the desired case in certain situations)
 
