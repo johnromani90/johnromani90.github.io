@@ -6,7 +6,7 @@ description: adding additional audit lookups from associated foreign key
 
 This week I worked on auditing using the [audited gem](https://github.com/collectiveidea/audited){:target="_blank"}. The idea of auditing models is  not new or necessarily complex, however, the implmentation can effect production cost as we are essentially creating new row in our "audits" table every time our logic says "save this."
 
-The gem implements [polymorphism](https://johnromani90.github.io/2017/setting-up-polymorphism-in-ruby-on-rails/){:target="_blank"} and allows you to specify which models to audit. The audits table has an "auditable_id" and an "auditable_type" along with "user_id" which makes for a handy "current_user" helper method that you can use to pull the user on any audit instance.
+The gem implements [polymorphism](https://johnromani90.github.io/2017/setting-up-polymorphism-with-ruby-on-rails/){:target="_blank"} and allows you to specify which models to audit. The audits table has an "auditable_id" and an "auditable_type" along with "user_id" which makes for a handy "current_user" helper method that you can use to pull the user on any audit instance.
 
 Now our client has had auditing in place for some time now, but recently they asked for a better way to view the changes on the audits screen. I was unaware at the time, but the way the gem works is that it returns the Model that was changed along with the id of that instance. So from a ui perspective seeing things like this are not very useful...
 
