@@ -29,11 +29,11 @@ To encourage this technique, I made a JavaScript with Tamper Monkey to open up f
 ```javascript
 
 $(document).ready( function(){
-  function add_google_button( div ){
-    if (div.length){
+  function add_google_button( $div ){
+    if ($div.length){
       list = $("h3");
       google_button = $('<input id="ten-tab-button" type="button" value="Ten Tab">');
-      div.append(google_button);
+      $div.append(google_button);
       google_button.css({"font-size": "16px",
                      padding: "8px",
                      "background-color": "black",
