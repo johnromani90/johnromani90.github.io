@@ -21,7 +21,7 @@ While skimming through all the tabs a couple of things happen:
 
 ***
 
-More than a couple of times I have found myself wishing I had spent 5 more mins researching before I choose a [design pattern](https://johnromani90.github.io/2016/blog-post/).
+More than a couple of times I have found myself wishing I had spent 5 more minutes researching before choosing a [design pattern](https://johnromani90.github.io/2016/blog-post/).
 
 To encourage this technique, I made a JavaScript with Tamper Monkey to open up first page results in new tabs. [Tamper Monkey](https://tampermonkey.net/){:target="_blank"} is a Google Chrome extension that allows you to write your own custom JavaScripts. You can find the code here:
 
