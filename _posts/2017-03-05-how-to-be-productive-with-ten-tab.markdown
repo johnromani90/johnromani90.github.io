@@ -5,7 +5,7 @@ description: using Tamper Monkey and a simple JavaScript to learn more efficient
 ---
 I'm a developer and by far the most valuable tool that I use everyday is the Google search engine. In today's world it matters less about what you know at this moment in time and more about how efficient you are in learning new things.
 
-One mistake that I see developers making is rushing into an issue, wanting to solve the problem with time still left on the clock, without researching some of the basics first. I am guilty of this myself, and I have found that more times than not this attitude can ultimately slow down progress on an issue.
+One mistake that I see developers making is rushing into an issue, without researching some of the basics first. I am guilty of this myself, and I have found that more times than not this attitude can ultimately slow down progress on an issue.
 
 Even when feeling confident about implementing a feature, it still helps taking a few minutes to brush up on some of the things you may have overlooked.
 
