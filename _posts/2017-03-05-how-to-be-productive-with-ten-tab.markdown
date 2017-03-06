@@ -5,9 +5,11 @@ description: using Tamper Monkey and a simple JavaScript to learn more efficient
 ---
 I'm a developer and by far the most valuable tool that I use everyday is the Google search engine. In today's world it matters less about what you know at this moment in time and more about how efficient you are in learning new things.
 
-One thing that I see all the time is devs rushing into an issue wanting to solve the problem with time still left on the clock. I am guilty of this myself, and I have found that more times than not this attitude can ultimately slow down progress on an issue.
+One mistake that I see developers making is rushing into an issue, wanting to solve the problem with time still left on the clock, without researching some of the basics first. I am guilty of this myself, and I have found that more times than not this attitude can ultimately slow down progress on an issue.
 
-Some of the best advice that I have received is when ever you don't know how to do something (which is at least ten times daily) go to your favorite search engine, ask you question, and then open every link on the first page in a new tab. Now, before making any assumptions about what you do or do not know about what ever it is you are asking, skim through every tab, closing the ones that seem irrelevant, and leaving open the ones you find helpful.
+Even when feeling confident about implementing a feature, it still helps taking a few minutes to brush up on some of the things you may have overlooked.
+
+Some of the best advice that I have received is when ever you don't know how to do something (which is at least ten times daily) go to your favorite search engine, ask your question, and then open every link on the first page in a new tab. Now, before making any assumptions about what you do or do not know about what ever it is you are asking, skim through every tab, closing the ones that seem irrelevant, and leaving open the ones you find helpful.
 
 While skimming through all the tabs a couple of things happen:
 
@@ -19,9 +21,9 @@ While skimming through all the tabs a couple of things happen:
 
 ***
 
-More than a couple of times I have found myself wishing I had spent 5 more mins researching before I choose a design pattern.
+More than a couple of times I have found myself wishing I had spent 5 more mins researching before I choose a [design pattern](https://johnromani90.github.io/2016/blog-post/).
 
-In order to achieve this I made a JavaScript with Tamper Monkey to open up first page results in new tabs. [Tamper Monkey](https://tampermonkey.net/) is a Google Chrome extension that allows you to write your own custom JavaScripts. You can find the code here:
+To encourage this technique, I made a JavaScript with Tamper Monkey to open up first page results in new tabs. [Tamper Monkey](https://tampermonkey.net/){:target="_blank"} is a Google Chrome extension that allows you to write your own custom JavaScripts. You can find the code here:
 
 
 ```javascript
