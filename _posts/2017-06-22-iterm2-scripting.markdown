@@ -63,12 +63,11 @@ tell application "iTerm"
   tell current window
     create tab with default profile
   end tell
-
 ```
 
 The above is pretty self explanatory but here is the gist. First, per Iterm's docs, you are suppose to define a dir called
 
-.```
+```bash
    library/application\ support/iterm/iterm_scripts/`
 ```
 
@@ -78,7 +77,7 @@ Next, create your script with a `.scpt` extension. Unless you are doing somethin
 
 To run you iterm script simply:
 
-```
+```bash
     osascript ../your_script.scpt
 ```
 
