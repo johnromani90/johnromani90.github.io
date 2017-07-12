@@ -85,4 +85,5 @@ To run you iterm script simply:
 All in all this saves me about 30 seconds every day, but there is something really satisfying about opening my laptop and having my dev environment loaded with one command.
 
 End result:
-![alt text](/Users/johnromani/projects/johnromani90.github.io/assets/images/he_dev.gif)
+
+![alt text](https://github.com/johnromani90/johnromani90.github.io/blob/master/assets/images/he_dev.gif?raw=true)
