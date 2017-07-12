@@ -85,4 +85,4 @@ All in all this saves me about 30 seconds every day, but there is something real
 
 End result:
 
-![alt text](https://github.com/johnromani90/johnromani90.github.io/blob/master/assets/images/he_dev.gif?raw=true)
+![alt text](https://raw.githubusercontent.com/johnromani90/johnromani90.github.io/master/assets/images/he-dev2.gif)
